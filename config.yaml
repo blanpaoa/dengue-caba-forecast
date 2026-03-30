@@ -1,0 +1,180 @@
+# config.yaml
+# Configuración global del proyecto
+# Predicción espacio-temporal de dengue en CABA
+
+# --- Proyecto ---
+project:
+  name: "dengue-caba-forecast"
+  version: "0.1.0"
+  author: "Paola Andrea Blanco Blanco"
+  institution: "FIUBA - Especialización en Inteligencia Artificial"
+
+# --- Datos ---
+data:
+  # Fuentes
+  sources:
+    epidemiological:
+      - name: "BEN"
+        description: "Boletín Epidemiológico Nacional"
+        url: "https://www.argentina.gob.ar/salud/epidemiologia/boletines"
+      - name: "BES_CABA"
+        description: "Boletín Epidemiológico Semanal CABA"
+        url: "https://www.buenosaires.gob.ar/salud/epidemiologia"
+      - name: "datos_gob_ar"
+        description: "Portal de datos abiertos - Vigilancia Dengue"
+        url: "https://datos.gob.ar/dataset/salud-dengue-zika-vigilancia"
+    climate:
+      - name: "SMN"
+        description: "Servicio Meteorológico Nacional"
+        url: "https://www.smn.gob.ar"
+      - name: "BA_datos"
+        description: "BA en Datos - Cambio Climático GCBA"
+        url: "https://data.buenosaires.gob.ar"
+
+  # Parámetros temporales
+  temporal:
+    start_year: 2010
+    epidemiological_week_start: 1
+    frequency: "weekly"          # semana epidemiológica
+
+  # Unidades espaciales
+  spatial:
+    unit: "comuna"
+    n_units: 15
+    crs: "EPSG:4326"             # WGS84
+
+  # Paths locales
+  paths:
+    raw: "data/raw"
+    processed: "data/processed"
+    external: "data/external"
+
+# --- Variables climáticas ---
+climate_variables:
+  - name: "temp_min"
+    description: "Temperatura mínima diaria (°C)"
+    valid_range: [-5, 45]
+  - name: "temp_mean"
+    description: "Temperatura media diaria (°C)"
+    valid_range: [-5, 45]
+  - name: "temp_max"
+    description: "Temperatura máxima diaria (°C)"
+    valid_range: [-5, 45]
+  - name: "humidity"
+    description: "Humedad relativa (%)"
+    valid_range: [0, 100]
+  - name: "precipitation"
+    description: "Precipitaciones acumuladas (mm)"
+    valid_range: [0, 500]
+  - name: "heat_index"
+    description: "Índice de calor (derivado)"
+    valid_range: [-5, 60]
+
+# --- Feature Engineering ---
+features:
+  # Variables rezagadas
+  lags:
+    epidemiological: [1, 2, 3, 4]   # semanas previas de casos dengue
+    climate_days: [7, 14, 21]       # promedios de variables climáticas
+
+  # Features espaciales
+  spatial:
+    neighborhood_lags: true          # casos en comunas vecinas
+    adjacency_matrix: "data/external/comunas_adjacency.csv"
+
+  # Estacionalidad
+  seasonality:
+    week_of_year: true
+    month: true
+    season: true                     # verano = temporada alta dengue
+    epidemic_season_months: [12, 1, 2, 3, 4]  # dic-abr = temporada de riesgo
+
+# --- Modelos ---
+models:
+  # Baseline
+  baseline:
+    type: "sarima"
+    order: [1, 1, 1]
+    seasonal_order: [1, 1, 1, 52]
+
+  # Random Forest
+  random_forest:
+    n_estimators: 200
+    max_depth: 10
+    min_samples_leaf: 5
+    random_state: 42
+
+  # XGBoost
+  xgboost:
+    n_estimators: 300
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
+
+  # LSTM
+  lstm:
+    units: [64, 32]
+    dropout: 0.2
+    epochs: 100
+    batch_size: 32
+    lookback_weeks: 8              # ventana de contexto temporal
+
+  # GRU
+  gru:
+    units: [64, 32]
+    dropout: 0.2
+    epochs: 100
+    batch_size: 32
+    lookback_weeks: 8
+
+  # Ensemble (basado en Sebastianelli et al. 2024)
+  ensemble:
+    base_models: ["xgboost", "lstm", "random_forest"]
+    meta_model: "random_forest"
+    cv_strategy: "time_series_split"
+    n_splits: 5
+
+# --- Predicción ---
+prediction:
+  horizons: [1, 2, 3, 4]          # semanas adelante
+  output_type: "both"              # regression + classification
+  classification_threshold: 5     # casos/semana para definir "brote"
+
+# --- Alertas ---
+alerts:
+  levels:
+    low:
+      label: "Bajo"
+      color: "#2ECC71"
+      threshold_percentile: 0.50
+    moderate:
+      label: "Moderado"
+      color: "#F39C12"
+      threshold_percentile: 0.75
+    high:
+      label: "Alto"
+      color: "#E74C3C"
+      threshold_percentile: 0.90
+    critical:
+      label: "Crítico"
+      color: "#8E44AD"
+      threshold_percentile: 0.95
+
+# --- Evaluación ---
+evaluation:
+  metrics:
+    regression: ["MAE", "RMSE", "MAPE", "R2"]
+    classification: ["precision", "recall", "f1", "AUC-ROC"]
+    business: ["detection_rate", "lead_time_weeks"]
+  cross_validation:
+    strategy: "expanding_window"   # respeta orden temporal
+    n_splits: 5
+    min_train_size: 52             # mínimo 1 año epidemiológico
+
+# --- Reproducibilidad ---
+reproducibility:
+  random_seed: 42
+  log_level: "INFO"
+  mlflow_tracking: false           # activar en etapas avanzadas

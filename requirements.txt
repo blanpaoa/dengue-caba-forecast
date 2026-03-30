@@ -1,0 +1,58 @@
+# requirements.txt
+# Predicción espacio-temporal de dengue en CABA
+# Python 3.10+
+
+# --- Datos y procesamiento ---
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+pyarrow>=12.0.0          # parquet para datos procesados
+
+# --- Datos geoespaciales ---
+geopandas>=0.13.0
+shapely>=2.0.0
+pyproj>=3.5.0
+folium>=0.14.0            # mapas interactivos
+
+# --- Clima y series temporales ---
+statsmodels>=0.14.0       # SARIMA, ARIMA baseline
+requests>=2.31.0          # descarga datos SMN
+
+# --- Machine Learning clásico ---
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+catboost>=1.2.0           # usado en Sebastianelli et al. 2024
+
+# --- Deep Learning ---
+tensorflow>=2.13.0        # LSTM / GRU
+keras>=2.13.0
+
+# --- Visualización ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+dash>=2.11.0              # dashboard interactivo
+
+# --- Notebooks ---
+jupyter>=1.0.0
+ipykernel>=6.25.0
+ipywidgets>=8.0.0
+
+# --- Configuración ---
+pyyaml>=6.0.0
+python-dotenv>=1.0.0
+
+# --- Testing ---
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# --- Calidad de código ---
+black>=23.0.0
+flake8>=6.0.0
+isort>=5.12.0
+
+# --- Utilidades ---
+tqdm>=4.65.0              # barras de progreso
+joblib>=1.3.0             # paralelización y serialización de modelos
+mlflow>=2.5.0             # tracking de experimentos (opcional)
