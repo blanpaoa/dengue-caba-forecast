@@ -23,7 +23,7 @@ Pipeline:
     Paso 1 → Cargar cada fuente por separado
     Paso 2 → Estandarizar columnas al mismo formato
     Paso 3 → Filtrar solo CABA y solo Dengue
-    Paso 4 → Limpiar comunas (mapear a ID 1-15, descartar SIN DATO)
+    Paso 4 → Limpiar comunas (mapear a ID 1-15, descartar SIN DATO, porque no suma infromación)
     Paso 5 → Limpiar columnas temporales
     Paso 6 → Limpiar casos confirmados
     Paso 7 → Combinar los tres datasets
