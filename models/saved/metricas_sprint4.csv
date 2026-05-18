@@ -1,0 +1,9 @@
+Modelo,Split,MAE,RMSE,MAPE,R2,N
+Persistencia (lag 1),Validation,16.81,43.1,63.8,0.932,390
+Persistencia (lag 1),Test,0.17,0.71,81.7,0.186,1170
+Baseline (media histórica),Validation,50.62,138.82,107.6,0.3,390
+Baseline (media histórica),Test,11.14,52.18,5056.7,-4357.471,1170
+Ridge (climático),Validation,71.25,168.8,738.0,-0.035,390
+Ridge (climático),Test,24.51,40.73,3970.4,-2654.179,1170
+Random Forest,Validation,24.93,103.13,49.2,0.614,390
+Random Forest,Test,0.97,2.46,364.4,-8.714,1170
