@@ -1,0 +1,21 @@
+Modelo,Split,Horizonte,MAE,RMSE,MAPE,R2,N
+GRU simple,Validation,0,89.96,159.02,1448.1,-0.068,210
+GRU simple,Test,0,90.62,90.63,7082.7,-11198.604,990
+GRU apilado,Validation,0,56.94,154.28,602.2,-0.006,210
+GRU apilado,Test,0,39.0,39.01,2999.5,-2074.462,990
+GRU simple,Validation,1,42.73,121.84,454.1,-0.007,210
+GRU simple,Test,1,26.79,26.81,2033.6,-978.883,990
+GRU apilado,Validation,1,42.13,121.97,429.4,-0.009,210
+GRU apilado,Test,1,25.34,25.35,1918.5,-875.463,990
+GRU simple,Validation,2,39.55,85.13,679.1,-0.018,210
+GRU simple,Test,2,35.55,35.56,2726.6,-1723.751,990
+GRU apilado,Validation,2,71.66,98.28,1488.2,-0.357,210
+GRU apilado,Test,2,74.63,74.63,5817.3,-7594.133,990
+GRU simple,Validation,3,21.98,63.52,287.9,-0.002,210
+GRU simple,Test,3,13.66,13.68,991.5,-254.401,990
+GRU apilado,Validation,3,21.59,63.55,273.1,-0.003,210
+GRU apilado,Test,3,12.95,12.97,935.6,-228.66,990
+GRU simple,Validation,4,10.59,45.56,72.3,-0.043,210
+GRU simple,Test,4,1.09,1.26,26.8,-1.179,990
+GRU apilado,Validation,4,10.82,45.43,74.7,-0.037,210
+GRU apilado,Test,4,1.7,1.8,60.2,-3.418,990

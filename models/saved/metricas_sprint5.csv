@@ -1,0 +1,9 @@
+Modelo,Split,Horizonte,MAE,RMSE,MAPE,R2,N
+XGBoost,Validation,1,41.06,114.71,169.3,0.522,390
+XGBoost,Test,1,2.8,7.63,890.5,-90.957,1155
+XGBoost,Validation,2,45.78,133.31,156.7,0.355,390
+XGBoost,Test,2,4.58,16.72,1685.9,-435.205,1140
+XGBoost,Validation,3,52.78,147.61,240.2,0.21,390
+XGBoost,Test,3,5.02,15.05,993.2,-347.912,1125
+XGBoost,Validation,4,54.69,145.1,265.0,0.238,390
+XGBoost,Test,4,8.29,21.34,1341.9,-692.013,1110
