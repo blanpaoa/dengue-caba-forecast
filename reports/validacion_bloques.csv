@@ -1,0 +1,37 @@
+Bloque,Descripcion,Modelo,Horizonte,MAE,N,Casos_media,Casos_max
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),Ensemble,1,31.23,390,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),Ensemble,2,44.92,390,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),Ensemble,3,16.67,210,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),Ensemble,4,10.57,210,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),LSTM+aug,1,38.38,210,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),LSTM+aug,2,38.85,210,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),LSTM+aug,3,16.67,210,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),LSTM+aug,4,10.57,210,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),Persistencia,1,31.23,390,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),Persistencia,2,44.92,390,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),Persistencia,3,57.32,390,60.94,1391
+2024 S1 — Brote masivo,Brote 2024 semanas 1-26 (máx 1391 casos/semana),Persistencia,4,67.93,390,60.94,1391
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),Ensemble,1,0.01,390,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),Ensemble,2,0.02,390,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),Ensemble,3,0.01,210,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),Ensemble,4,1.01,210,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),LSTM+aug,1,14.59,210,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),LSTM+aug,2,34.67,210,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),LSTM+aug,3,0.01,210,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),LSTM+aug,4,1.01,210,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),Persistencia,1,0.01,390,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),Persistencia,2,0.02,390,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),Persistencia,3,0.02,390,0.01,1
+2024 S2 — Temporada baja,Post-brote 2024 semanas 27-52 (casi cero casos),Persistencia,4,0.02,390,0.01,1
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),Ensemble,1,0.27,765,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),Ensemble,2,0.29,750,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),Ensemble,3,0.09,555,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),Ensemble,4,0.99,540,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),LSTM+aug,1,14.45,585,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),LSTM+aug,2,34.57,570,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),LSTM+aug,3,0.09,555,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),LSTM+aug,4,0.99,540,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),Persistencia,1,0.27,765,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),Persistencia,2,0.29,750,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),Persistencia,3,0.32,735,0.22,17
+2025 — Brote moderado,Brote 2025 (intensidad intermedia),Persistencia,4,0.35,720,0.22,17

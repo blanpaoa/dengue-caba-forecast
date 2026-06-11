@@ -1,0 +1,255 @@
+Feature,Importancia,Horizonte,Label,Categoria
+cases_lag1,39.181,0,actual,Casos propios
+cases_lag2,0.435,0,actual,Casos propios
+cases_lag3,0.343,0,actual,Casos propios
+cases_lag4,0.256,0,actual,Casos propios
+incidencia_lag1,21.684,0,actual,Casos propios
+incidencia_lag2,0.459,0,actual,Casos propios
+incidencia_lag3,0.312,0,actual,Casos propios
+incidencia_lag4,0.208,0,actual,Casos propios
+casos_vecinas_lag1,0.31,0,actual,Vecindad espacial
+incidencia_vecinas_lag1,3.147,0,actual,Vecindad espacial
+temp_mean,0.269,0,actual,Temperatura
+precipitation,0.174,0,actual,Precipitación
+humidity_mean,0.23,0,actual,Humedad/Calor
+heat_index_mean,0.414,0,actual,Humedad/Calor
+temp_mean_anomaly,0.149,0,actual,Temperatura
+precipitation_anomaly,0.133,0,actual,Precipitación
+humidity_mean_anomaly,0.204,0,actual,Humedad/Calor
+temp_mean_lag1,2.662,0,actual,Temperatura
+temp_mean_lag2,0.416,0,actual,Temperatura
+temp_mean_lag3,0.669,0,actual,Temperatura
+temp_mean_lag4,3.036,0,actual,Temperatura
+precipitation_lag1,0.185,0,actual,Precipitación
+precipitation_lag2,0.158,0,actual,Precipitación
+precipitation_lag3,0.794,0,actual,Precipitación
+precipitation_lag4,0.163,0,actual,Precipitación
+humidity_mean_lag1,0.628,0,actual,Humedad/Calor
+humidity_mean_lag2,1.416,0,actual,Humedad/Calor
+humidity_mean_lag3,1.123,0,actual,Humedad/Calor
+humidity_mean_lag4,0.423,0,actual,Humedad/Calor
+heat_index_mean_lag1,1.508,0,actual,Humedad/Calor
+heat_index_mean_lag2,4.183,0,actual,Humedad/Calor
+heat_index_mean_lag3,0.194,0,actual,Humedad/Calor
+heat_index_mean_lag4,0.074,0,actual,Humedad/Calor
+temp_mean_anomaly_lag1,0.369,0,actual,Temperatura
+temp_mean_anomaly_lag2,0.315,0,actual,Temperatura
+temp_mean_anomaly_lag3,0.166,0,actual,Temperatura
+temp_mean_anomaly_lag4,0.287,0,actual,Temperatura
+precipitation_anomaly_lag1,1.329,0,actual,Precipitación
+precipitation_anomaly_lag2,0.263,0,actual,Precipitación
+precipitation_anomaly_lag3,0.161,0,actual,Precipitación
+precipitation_anomaly_lag4,0.104,0,actual,Precipitación
+humidity_mean_anomaly_lag1,0.101,0,actual,Humedad/Calor
+humidity_mean_anomaly_lag2,0.185,0,actual,Humedad/Calor
+humidity_mean_anomaly_lag3,0.661,0,actual,Humedad/Calor
+humidity_mean_anomaly_lag4,0.235,0,actual,Humedad/Calor
+semana_sin,7.073,0,actual,Estacionalidad
+semana_cos,0.157,0,actual,Estacionalidad
+mes_aprox,2.321,0,actual,Estacionalidad
+comuna_id,0.189,0,actual,Geografía
+es_comuna_1,0.362,0,actual,Geografía
+poblacion,0.183,0,actual,Geografía
+cases_lag1,2.536,1,h=1,Casos propios
+cases_lag2,0.536,1,h=1,Casos propios
+cases_lag3,0.585,1,h=1,Casos propios
+cases_lag4,0.701,1,h=1,Casos propios
+incidencia_lag1,3.024,1,h=1,Casos propios
+incidencia_lag2,0.314,1,h=1,Casos propios
+incidencia_lag3,0.43,1,h=1,Casos propios
+incidencia_lag4,0.595,1,h=1,Casos propios
+casos_vecinas_lag1,0.157,1,h=1,Vecindad espacial
+incidencia_vecinas_lag1,1.697,1,h=1,Vecindad espacial
+temp_mean,0.763,1,h=1,Temperatura
+precipitation,0.279,1,h=1,Precipitación
+humidity_mean,0.091,1,h=1,Humedad/Calor
+heat_index_mean,0.331,1,h=1,Humedad/Calor
+temp_mean_anomaly,0.126,1,h=1,Temperatura
+precipitation_anomaly,0.392,1,h=1,Precipitación
+humidity_mean_anomaly,0.112,1,h=1,Humedad/Calor
+temp_mean_lag1,0.875,1,h=1,Temperatura
+temp_mean_lag2,0.568,1,h=1,Temperatura
+temp_mean_lag3,0.388,1,h=1,Temperatura
+temp_mean_lag4,2.322,1,h=1,Temperatura
+precipitation_lag1,0.372,1,h=1,Precipitación
+precipitation_lag2,0.188,1,h=1,Precipitación
+precipitation_lag3,0.088,1,h=1,Precipitación
+precipitation_lag4,0.167,1,h=1,Precipitación
+humidity_mean_lag1,0.109,1,h=1,Humedad/Calor
+humidity_mean_lag2,0.155,1,h=1,Humedad/Calor
+humidity_mean_lag3,0.529,1,h=1,Humedad/Calor
+humidity_mean_lag4,2.0,1,h=1,Humedad/Calor
+heat_index_mean_lag1,0.197,1,h=1,Humedad/Calor
+heat_index_mean_lag2,0.872,1,h=1,Humedad/Calor
+heat_index_mean_lag3,2.157,1,h=1,Humedad/Calor
+heat_index_mean_lag4,1.314,1,h=1,Humedad/Calor
+temp_mean_anomaly_lag1,0.317,1,h=1,Temperatura
+temp_mean_anomaly_lag2,0.087,1,h=1,Temperatura
+temp_mean_anomaly_lag3,0.119,1,h=1,Temperatura
+temp_mean_anomaly_lag4,0.046,1,h=1,Temperatura
+precipitation_anomaly_lag1,0.204,1,h=1,Precipitación
+precipitation_anomaly_lag2,0.072,1,h=1,Precipitación
+precipitation_anomaly_lag3,0.112,1,h=1,Precipitación
+precipitation_anomaly_lag4,0.741,1,h=1,Precipitación
+humidity_mean_anomaly_lag1,0.117,1,h=1,Humedad/Calor
+humidity_mean_anomaly_lag2,0.239,1,h=1,Humedad/Calor
+humidity_mean_anomaly_lag3,0.347,1,h=1,Humedad/Calor
+humidity_mean_anomaly_lag4,0.059,1,h=1,Humedad/Calor
+semana_sin,69.634,1,h=1,Estacionalidad
+semana_cos,1.841,1,h=1,Estacionalidad
+mes_aprox,0.113,1,h=1,Estacionalidad
+comuna_id,0.233,1,h=1,Geografía
+es_comuna_1,0.622,1,h=1,Geografía
+poblacion,0.127,1,h=1,Geografía
+cases_lag1,0.618,2,h=2,Casos propios
+cases_lag2,0.336,2,h=2,Casos propios
+cases_lag3,0.192,2,h=2,Casos propios
+cases_lag4,0.09,2,h=2,Casos propios
+incidencia_lag1,0.873,2,h=2,Casos propios
+incidencia_lag2,0.232,2,h=2,Casos propios
+incidencia_lag3,0.429,2,h=2,Casos propios
+incidencia_lag4,0.219,2,h=2,Casos propios
+casos_vecinas_lag1,0.109,2,h=2,Vecindad espacial
+incidencia_vecinas_lag1,0.141,2,h=2,Vecindad espacial
+temp_mean,0.35,2,h=2,Temperatura
+precipitation,0.219,2,h=2,Precipitación
+humidity_mean,0.253,2,h=2,Humedad/Calor
+heat_index_mean,0.152,2,h=2,Humedad/Calor
+temp_mean_anomaly,0.176,2,h=2,Temperatura
+precipitation_anomaly,0.084,2,h=2,Precipitación
+humidity_mean_anomaly,0.075,2,h=2,Humedad/Calor
+temp_mean_lag1,0.412,2,h=2,Temperatura
+temp_mean_lag2,0.195,2,h=2,Temperatura
+temp_mean_lag3,0.335,2,h=2,Temperatura
+temp_mean_lag4,4.206,2,h=2,Temperatura
+precipitation_lag1,0.211,2,h=2,Precipitación
+precipitation_lag2,0.048,2,h=2,Precipitación
+precipitation_lag3,0.154,2,h=2,Precipitación
+precipitation_lag4,0.129,2,h=2,Precipitación
+humidity_mean_lag1,0.071,2,h=2,Humedad/Calor
+humidity_mean_lag2,0.174,2,h=2,Humedad/Calor
+humidity_mean_lag3,0.633,2,h=2,Humedad/Calor
+humidity_mean_lag4,2.011,2,h=2,Humedad/Calor
+heat_index_mean_lag1,1.236,2,h=2,Humedad/Calor
+heat_index_mean_lag2,0.338,2,h=2,Humedad/Calor
+heat_index_mean_lag3,1.853,2,h=2,Humedad/Calor
+heat_index_mean_lag4,5.957,2,h=2,Humedad/Calor
+temp_mean_anomaly_lag1,0.051,2,h=2,Temperatura
+temp_mean_anomaly_lag2,0.045,2,h=2,Temperatura
+temp_mean_anomaly_lag3,0.035,2,h=2,Temperatura
+temp_mean_anomaly_lag4,0.442,2,h=2,Temperatura
+precipitation_anomaly_lag1,0.088,2,h=2,Precipitación
+precipitation_anomaly_lag2,0.223,2,h=2,Precipitación
+precipitation_anomaly_lag3,1.355,2,h=2,Precipitación
+precipitation_anomaly_lag4,0.886,2,h=2,Precipitación
+humidity_mean_anomaly_lag1,0.091,2,h=2,Humedad/Calor
+humidity_mean_anomaly_lag2,0.308,2,h=2,Humedad/Calor
+humidity_mean_anomaly_lag3,0.134,2,h=2,Humedad/Calor
+humidity_mean_anomaly_lag4,0.667,2,h=2,Humedad/Calor
+semana_sin,55.744,2,h=2,Estacionalidad
+semana_cos,0.231,2,h=2,Estacionalidad
+mes_aprox,15.854,2,h=2,Estacionalidad
+comuna_id,0.197,2,h=2,Geografía
+es_comuna_1,0.98,2,h=2,Geografía
+poblacion,0.155,2,h=2,Geografía
+cases_lag1,0.951,3,h=3,Casos propios
+cases_lag2,0.41,3,h=3,Casos propios
+cases_lag3,0.114,3,h=3,Casos propios
+cases_lag4,0.168,3,h=3,Casos propios
+incidencia_lag1,0.721,3,h=3,Casos propios
+incidencia_lag2,0.475,3,h=3,Casos propios
+incidencia_lag3,0.79,3,h=3,Casos propios
+incidencia_lag4,0.59,3,h=3,Casos propios
+casos_vecinas_lag1,0.179,3,h=3,Vecindad espacial
+incidencia_vecinas_lag1,0.264,3,h=3,Vecindad espacial
+temp_mean,0.642,3,h=3,Temperatura
+precipitation,1.002,3,h=3,Precipitación
+humidity_mean,0.393,3,h=3,Humedad/Calor
+heat_index_mean,0.433,3,h=3,Humedad/Calor
+temp_mean_anomaly,0.102,3,h=3,Temperatura
+precipitation_anomaly,0.183,3,h=3,Precipitación
+humidity_mean_anomaly,0.093,3,h=3,Humedad/Calor
+temp_mean_lag1,0.728,3,h=3,Temperatura
+temp_mean_lag2,0.709,3,h=3,Temperatura
+temp_mean_lag3,2.693,3,h=3,Temperatura
+temp_mean_lag4,2.635,3,h=3,Temperatura
+precipitation_lag1,0.087,3,h=3,Precipitación
+precipitation_lag2,0.025,3,h=3,Precipitación
+precipitation_lag3,0.063,3,h=3,Precipitación
+precipitation_lag4,0.088,3,h=3,Precipitación
+humidity_mean_lag1,0.049,3,h=3,Humedad/Calor
+humidity_mean_lag2,0.993,3,h=3,Humedad/Calor
+humidity_mean_lag3,2.782,3,h=3,Humedad/Calor
+humidity_mean_lag4,0.102,3,h=3,Humedad/Calor
+heat_index_mean_lag1,0.043,3,h=3,Humedad/Calor
+heat_index_mean_lag2,0.102,3,h=3,Humedad/Calor
+heat_index_mean_lag3,2.796,3,h=3,Humedad/Calor
+heat_index_mean_lag4,13.767,3,h=3,Humedad/Calor
+temp_mean_anomaly_lag1,0.046,3,h=3,Temperatura
+temp_mean_anomaly_lag3,0.059,3,h=3,Temperatura
+temp_mean_anomaly_lag4,0.037,3,h=3,Temperatura
+precipitation_anomaly_lag1,0.249,3,h=3,Precipitación
+precipitation_anomaly_lag2,0.383,3,h=3,Precipitación
+precipitation_anomaly_lag3,1.387,3,h=3,Precipitación
+precipitation_anomaly_lag4,0.312,3,h=3,Precipitación
+humidity_mean_anomaly_lag1,0.275,3,h=3,Humedad/Calor
+humidity_mean_anomaly_lag2,0.075,3,h=3,Humedad/Calor
+humidity_mean_anomaly_lag3,0.092,3,h=3,Humedad/Calor
+humidity_mean_anomaly_lag4,0.033,3,h=3,Humedad/Calor
+semana_sin,21.21,3,h=3,Estacionalidad
+semana_cos,0.501,3,h=3,Estacionalidad
+mes_aprox,39.082,3,h=3,Estacionalidad
+comuna_id,0.312,3,h=3,Geografía
+es_comuna_1,0.56,3,h=3,Geografía
+poblacion,0.212,3,h=3,Geografía
+cases_lag1,0.318,4,h=4,Casos propios
+cases_lag2,0.151,4,h=4,Casos propios
+cases_lag3,0.188,4,h=4,Casos propios
+cases_lag4,0.111,4,h=4,Casos propios
+incidencia_lag1,0.507,4,h=4,Casos propios
+incidencia_lag2,0.288,4,h=4,Casos propios
+incidencia_lag3,0.172,4,h=4,Casos propios
+incidencia_lag4,0.145,4,h=4,Casos propios
+casos_vecinas_lag1,0.072,4,h=4,Vecindad espacial
+incidencia_vecinas_lag1,0.103,4,h=4,Vecindad espacial
+temp_mean,0.243,4,h=4,Temperatura
+precipitation,0.11,4,h=4,Precipitación
+humidity_mean,0.322,4,h=4,Humedad/Calor
+heat_index_mean,0.197,4,h=4,Humedad/Calor
+temp_mean_anomaly,0.08,4,h=4,Temperatura
+precipitation_anomaly,0.072,4,h=4,Precipitación
+humidity_mean_anomaly,0.086,4,h=4,Humedad/Calor
+temp_mean_lag1,0.067,4,h=4,Temperatura
+temp_mean_lag2,0.165,4,h=4,Temperatura
+temp_mean_lag3,1.028,4,h=4,Temperatura
+temp_mean_lag4,3.891,4,h=4,Temperatura
+precipitation_lag1,0.055,4,h=4,Precipitación
+precipitation_lag2,0.059,4,h=4,Precipitación
+precipitation_lag3,0.074,4,h=4,Precipitación
+precipitation_lag4,0.065,4,h=4,Precipitación
+humidity_mean_lag1,3.5,4,h=4,Humedad/Calor
+humidity_mean_lag2,2.114,4,h=4,Humedad/Calor
+humidity_mean_lag3,0.029,4,h=4,Humedad/Calor
+humidity_mean_lag4,0.073,4,h=4,Humedad/Calor
+heat_index_mean_lag1,0.06,4,h=4,Humedad/Calor
+heat_index_mean_lag2,1.337,4,h=4,Humedad/Calor
+heat_index_mean_lag3,5.289,4,h=4,Humedad/Calor
+heat_index_mean_lag4,31.134,4,h=4,Humedad/Calor
+temp_mean_anomaly_lag1,0.058,4,h=4,Temperatura
+temp_mean_anomaly_lag2,0.032,4,h=4,Temperatura
+temp_mean_anomaly_lag3,0.035,4,h=4,Temperatura
+temp_mean_anomaly_lag4,0.033,4,h=4,Temperatura
+precipitation_anomaly_lag1,0.064,4,h=4,Precipitación
+precipitation_anomaly_lag2,0.243,4,h=4,Precipitación
+precipitation_anomaly_lag3,0.329,4,h=4,Precipitación
+precipitation_anomaly_lag4,0.057,4,h=4,Precipitación
+humidity_mean_anomaly_lag1,0.043,4,h=4,Humedad/Calor
+humidity_mean_anomaly_lag2,0.076,4,h=4,Humedad/Calor
+humidity_mean_anomaly_lag3,0.029,4,h=4,Humedad/Calor
+humidity_mean_anomaly_lag4,0.429,4,h=4,Humedad/Calor
+semana_sin,0.4,4,h=4,Estacionalidad
+semana_cos,0.084,4,h=4,Estacionalidad
+mes_aprox,45.181,4,h=4,Estacionalidad
+comuna_id,0.266,4,h=4,Geografía
+es_comuna_1,0.397,4,h=4,Geografía
+poblacion,0.139,4,h=4,Geografía
