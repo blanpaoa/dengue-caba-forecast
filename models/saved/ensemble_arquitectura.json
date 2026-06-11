@@ -1,0 +1,22 @@
+{
+  "0": {
+    "default": "xgboost",
+    "excepciones": {}
+  },
+  "1": {
+    "default": "persistencia",
+    "excepciones": {}
+  },
+  "2": {
+    "default": "persistencia",
+    "excepciones": {}
+  },
+  "3": {
+    "default": "lstm",
+    "excepciones": {}
+  },
+  "4": {
+    "default": "lstm",
+    "excepciones": {}
+  }
+}
